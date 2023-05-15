@@ -1,0 +1,348 @@
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--green: #1b6c45;
+	--yellow: #f59e0b;
+	
+	/* --orange:var(--orange) */
+	--purple: #8B5CF6;
+	--light: #EEE;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
+body {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF;
+	/* background-color: var(--dark); */
+	background-color: #4158D0;
+	font-family: 'Fredoka one', cursive;
+	/* background-image: url(images/background.jpg); */
+	/* background-image: linear-gradient(to right, #E22865, #37ADCD); */
+	/* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+	background-size: cover;
+	/* background-position: center; */
+	background-repeat: no-repeat;
+	background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+background-image:url("title.png");
+
+}
+
+header h1{ 
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: var(--grey);
+	margin-bottom: 1rem;
+}
+
+#new-task-form {
+	margin-top: 5%;
+	display: flex;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#new-task-input {
+	flex: 1 1 0%;
+	background-color: var(--darker);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: var(--light);
+	font-size: 1.25rem;
+}
+
+#new-task-input::placeholder {
+	color: var(--grey);
+}
+
+#new-task-submit {
+	
+	color: var(--pink);
+	font-size: 1.50rem;
+	font-weight: 700;
+	background-image: linear-gradient(to right, #eb3349,#f45c43);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+	
+}
+
+#new-task-submit:hover {
+	opacity: 0.3;
+}
+
+#new-task-submit:active {
+	opacity: 0.3;
+}
+
+main {
+	
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+.task-list h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	/* color: var(--green); */
+	/* color: var(--grey); */
+	margin-bottom: 1rem;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--darkest);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+	color: var(--light);
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+	color: var(--pink);
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 0.3;
+}
+
+.task .actions button:active {
+	opacity: 1.0;
+}
+
+.task .actions .edit {
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.task .actions .delete {
+	/* color: crimson; */
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: linear-gradient(to right, var(--green), var(--yellow));
+	/* color: rgb(220, 97, 20); */
+}
+/*  */
+h1{
+	
+	font-size: 70px;
+    color: whitesmoke;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(250,188,2),
+                 1px 1px 0 rgb(245,183,0),
+                 2px 2px 0 rgb(240,178,0),
+                 3px 3px 0 rgb(235,173,0),
+                 4px 4px 0 rgb(230,168,0),
+                 5px 5px 0 rgb(225,163,0),
+                 6px 6px 0 rgb(220,158,0),
+                 7px 7px 0 rgb(215,153,0),
+                 8px 8px 0 rgb(210,148,0),
+                 9px 9px 0 rgb(205,143,0),
+                 10px 10px  0 rgb(200,138,0),
+                 11px 11px 10px rgba(0,0,0,0.6),
+                 11px 11px 1px rgba(0,0,0,0.5),
+                 0px 0px 10px rgba(0,0,0,.2);
+				
+	
+	text-align: center;
+	color: transparent;
+	-webkit-text-stroke: 1px white;
+	-webkit-text-fill-color: black;
+	
+	animation: back 20s linear infinite;
+
+}
+@keyframes back{
+	100%{
+		background-position: 2000px 0;
+	}
+}
+/* h2{
+
+} */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+ 
+
+ h2{
+	
+  font-size: 70px;
+  font-weight: 500;
+  color:white;
+  /* border-right: 4px solid #4f2222; */
+  animation: cursor 50s infinite step-end, typing 5s infinite steps(10);
+  background-image: linear-gradient(to right, var(--darkest), var(--darkest));
+  -webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes cursor{
+  0%, 100%{border-color: transparent;}
+  50%{border-color: #e0dcdc;}
+}
+
+@keyframes typing{
+  0%{ width: 0ch} /*Text is hidden*/
+  30%{ width: 22ch;} /*The enitre header will be typed out*/
+  80%{ width: 22ch;} /*Text stays visible*/
+  90%{ width: 0ch;} /*Text is deleted*/
+  100%{ width: 0ch;} /*Text stays hidden*/
+}
+
+
+
+
+
+
+
+
+
+.bubbles{
+    position: absolute;
+    bottom: -120px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .bubbles span{
+    height: 60px;
+    width: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    animation: move 10s linear infinite;
+    position: relative;
+    overflow: hidden;
+  }
+  @keyframes move {
+    100%{
+      transform: translateY(-100vh);
+    }
+  }
+  .bubbles span.one{
+    animation-delay: 2.2s;
+    transform: scale(2.15)
+  }
+  .bubbles span.two{
+    animation-delay: 3.5s;
+    transform: scale(1.55)
+  }
+  .bubbles span.three{
+    animation-delay: 0.2s;
+    transform: scale(0.35)
+  }
+  .bubbles span.four{
+    animation-delay: 6s;
+    transform: scale(2.15)
+  }
+  .bubbles span.five{
+    animation-delay: 7s;
+    transform: scale(0.5)
+  }
+  .bubbles span.six{
+    animation-delay: 4s;
+    transform: scale(2.5)
+  }
+  .bubbles span.seven{
+    animation-delay: 3;
+    transform: scale(1.5);
+  }
+  .bubbles span:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 60px;
+    width: 40%;
+    transform: skew(45deg) translateX(150px);
+    background: rgba(255, 255, 255, 0.15);
+    animation: mirror 3s linear infinite;
+  }
+  @keyframes mirror {
+    100%{
+      transform: translateX(-450px);
+    }
+  }
+  .bubbles span.one:before{
+    animation-delay: 1.5s;
+  }
+  .bubbles span.two:before{
+    animation-delay: 3.5s;
+  }
+  .bubbles span.three:before{
+    animation-delay: 2.5s;
+  }
+  .bubbles span.four:before{
+    animation-delay: 7.5s;
+  }
+  .bubbles span.five:before{
+    animation-delay: 4.5s;
+  }
+  .bubbles span.six:before{
+    animation-delay: 0.5s;
+  }
+  .bubbles span.seven:before{
+    animation-delay: 6s;
+  }

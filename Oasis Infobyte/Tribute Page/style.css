@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
+ /* reset */
+ 
+body
+{
+    font-family: "Poppins","sans-serif";
+    color: skyblue;
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+p{
+    font-size: 1.5rem;
+    font-family: "Roboto","sans-serif";
+    font-size: 1.25 rem;
+    /* color: rgba(0, 0, 0, 0.596) ; */
+    color: whitesmoke;
+    line-height: 1.8rem;
+    text-align:justify;
+}
+
+a{
+    text-decoration : none;
+    display: inline-block;
+}
+
+
+/*utility */
+.container{
+    max-width: 1100px;
+    position: relative;
+    left: 150px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* nav-bar */
+.nav-bnd h4{
+   
+    margin: 0px;
+    padding: 0px;
+    color: whitesmoke
+}
+.nav-bnd{
+    
+    border: 4px solid #07f4a5;
+    padding: 4px;
+    border-radius: 8px;
+    background-color: black;
+}
+.nav{
+    
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    padding: 20px;
+    position:flex;
+    z-index: 1;
+}
+.nav-atb{
+    justify-content: space-between;
+}
+.nav-link{
+    flex-basis: 600px;
+    color: whitesmoke;
+}
+.nav-link li{
+    color: rgb(10, 212, 10);
+}
+.nav-link ul{
+    gap: 30px;
+    justify-content: space-between;
+}
+.link-hover{
+    color: whitesmoke
+}
+.link-hover:hover{
+    color: rgb(88, 76, 192)
+}
+
+/* space */
+.space{
+    width: 100%;
+    height: 50px;
+    background-color:black;
+}
+
+/* Head */
+.title{
+    font-size: 70px;
+    color: whitesmoke;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(250,188,2),
+                 1px 1px 0 rgb(245,183,0),
+                 2px 2px 0 rgb(240,178,0),
+                 3px 3px 0 rgb(235,173,0),
+                 4px 4px 0 rgb(230,168,0),
+                 5px 5px 0 rgb(225,163,0),
+                 6px 6px 0 rgb(220,158,0),
+                 7px 7px 0 rgb(215,153,0),
+                 8px 8px 0 rgb(210,148,0),
+                 9px 9px 0 rgb(205,143,0),
+                 10px 10px  0 rgb(200,138,0),
+                 11px 11px 10px rgba(0,0,0,0.6),
+                 11px 11px 1px rgba(0,0,0,0.5),
+                 0px 0px 10px rgba(0,0,0,.2);
+    
+    background-color:black;
+    margin: 0%;
+    padding: 0px;
+    border-radius: px;
+    overflow: hidden;
+}
+
+.head{
+    gap: 40px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.head-img img{
+    width: 1250px;
+    margin-top: 30px;
+    border: 4px solid #07f4a5;
+    border-radius: 20px;
+}
+
+/* about */
+.about , .bio{
+    border: 4px solid #07f4a5;
+    margin-top: 50px;
+    background-color:black;
+    padding: 30px;
+    border-radius: 30px;
+    padding-top: 20px;
+}
+
+/* quote */
+.qoutes{
+    border: 4px solid #07f4a5;
+    background-color:black;
+    width: 100%;
+    height: 450px;
+    padding-top: 10px;
+    margin-top: 50px;
+}
+.quote-card{
+    gap: 80px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.quote-card div{
+    width: 300px;
+    height: 300px;
+    border: 4px solid #07f4a5;
+    border-radius: 70px;
+    background-color: #9999933c;
+}
+#quote-text{
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Gallery */
+.Gallery{
+    padding-top: 0px;
+    border: 4px solid #07f4a5;
+    width: 100%;
+    height: 1200px;
+    margin-top: 50px;
+    background-color:black;
+}
+.Gallery-card img{
+    width: 300px;
+    margin-top: 50px;
+    border-radius: 30px;
+    border: 4px solid #07f4a5;
+}
+.Gallery-card{
+    /* margin-top: 80px; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* footer */
+.footer{
+    border: 4px solid #07f4a5;
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    background-color: black;
+}
+.footer-link{
+    padding-top: 20px;
+    gap: 40px;
+    justify-content: center;
+}
+.footer-text{
+    color: whitesmoke;
+    text-align: center;
+}
+.hover-links{
+    color: #999993;
+}
+.hover-links:hover{
+    color: rgb(70, 63, 54);
+}
+.new{
+  
+    background-color: black;
+    border-radius: 5000px;
+    border: 4px solid #07f4a5;
+    width: 100%;
+    color: skyblue;
+    text-align: center;
+    margin-top: 50px;
+    
+   
+
+
+    /* border-radius: 30px; */
+    /* padding-top: 20px; */
+
+}
